@@ -209,11 +209,11 @@ def main(win, width):
                 pos = pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
-# Difference!
+
                 if not start and spot != end:
                     start = spot
                     start.make_start()
-# Difference!
+
                 elif not end and spot != start:
                     end = spot
                     end.make_end()
